@@ -1,0 +1,341 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    overflow-x: hidden;
+}
+.mainNav{
+    width:100%;
+    height:90px;
+    display:flex;
+    padding:10px 20px;
+}
+.logo{
+   width:30%;
+   height:100%;   
+   overflow-y:hidden;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+    cursor:pointer;
+
+}
+.menu{
+   width:70%;
+   height:100%; 
+   display:flex;
+   justify-content: space-around;
+   line-height: 80px;
+   font-weight:bold;
+   font-size:18px;
+}
+.menu>div{
+    cursor:pointer;
+}
+.menu>div:hover{
+    color:#FD4F01;
+    transition:0.5s;
+}
+.menu>button{
+    width:100px;
+    height:40px;
+    margin: 18px 8px;
+    font-weight:bold;
+    background:white;
+    border: 2px solid black;
+    border-radius: 50px;
+    cursor:pointer;
+}
+.menu>button:hover{
+    border: 2px solid #FD4F01;
+    color:#FD4F01;
+    transition:0.5s;
+}
+.TradersCashback{
+    width:100%;
+    height:70vh;
+    display:block;
+    background-image: url(assets/1.jpg);
+    background-size:cover;
+     margin:0;
+    color:white;
+    text-align: center;
+    padding-top: 150px;
+    font-size: 40px;
+}
+.TradersCashback>button{
+    width:200px;
+    height:50px;
+    margin:60px;
+    background:#EA4B04;
+    cursor:pointer;
+    color:white;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 5px;
+    transition:1s;
+}
+.TradersCashback>button:hover{
+    background:#1E1C1B;
+}
+.whiteBackground{
+    width:100%;
+    height:80vh;
+    display:flex;
+    position:relative;
+}
+.image{
+    width:40%;
+    height:50vh;
+    background-image:url(assets/finance.jpg) ;
+    margin:15vh 10vh;
+   
+}
+.About> h1{
+    font-size:30px;
+    margin:15vh 0vh 5vh 0vh ;
+    text-align: left;
+    opacity:0.8;
+}
+.About> p{
+    font-size:17px;
+    margin:0vh 0vh 5vh 0vh ;
+    text-align: left;
+    opacity:0.8;
+}
+.com{
+    font-weight: bold;
+}
+.Com{
+font-weight: bold;
+border-bottom:3px solid #EA4B04;
+}
+.boxes{
+    background:transparent;
+    position:absolute;
+    top:100vh;
+    left:0px;
+    width:80%;
+    height:150px;
+    display:flex;
+    justify-content: space-around;
+    margin-left:120px;
+}
+.boxes>div{
+    background:white;
+    width:220px;
+    height:120px;
+    border:1px solid rgb(187, 187, 187, 0.3);
+    margin:auto;
+    line-height: 120px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.fa-icn{
+    color:#EA4B04;
+    
+}
+.parallax{
+    background:url(assets/world.jpg)  repeat fixed ;  
+    background-size: cover;
+}
+.parallax-inner{
+    padding-bottom:5%;
+    height:20px;
+    color:white;
+    text-align:center;
+    line-height:20px;
+    font-size:40px;
+    padding-top:70px;
+    
+   }
+.whiteBackground2{
+      padding:50px 10px;
+      width:100%;
+      height:100vh;
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap:5px;
+   }
+.whiteBackground2>div{
+       text-align:center;
+       font-size: 30px;
+
+   }
+.whiteBackground2>div>span{
+    text-align:center;
+    font-size: 15px;
+    color:rgba(0,0,0,0.6)
+}
+.lightBackground{
+background:#F7F7F7;
+width:100%;
+height:90vh;
+padding:20px;
+}
+
+.lightBackground p{
+    font-size:35px;
+    font-weight:bold;
+    margin-left:70px;
+    margin-bottom: 0px;
+
+}
+.flex{
+    display:flex;
+    justify-content: space-around;
+    padding:20px;
+}
+.article{
+    width:330px;
+    height:350px;
+    margin:30px auto;
+    border-radius: 10px;
+    cursor:pointer;
+    position: relative;
+    transition:1s;
+}
+.article::after{
+ position: absolute;
+ top:0;
+ left:0;
+ right:0;
+ bottom:0;
+ background:rgba(0,0,0,0.5);
+ content:'+';
+ text-align:center;
+ line-height:350px;
+ color:white;
+ font-size:100px;
+ opacity:0;
+transition:1s;
+}
+.article:hover::after{
+   opacity:1;
+   }
+
+.firstArt{
+    background-image:url(assets/Candlestick-.jpg);
+    background-size:cover;
+}
+.secondArt{
+    background-image:url(assets/computer.jpg);
+    background-size: cover;
+}
+.thirdArt{
+    background-image:url(assets/hands.jpg);
+    background-size: cover;
+}
+.artFooter{
+    font-size: 18px;
+    font-weight: bold;
+    padding-left:15px;
+    cursor:pointer;
+    transition:1s;
+}
+.artFooter:hover{
+    color:#EA4B04;
+}
+.artText{
+    font-size: 14px;
+    color:rgba(0,0,0,0.6);
+    padding-left:15px;
+}
+.time{
+    font-size: 14px;
+    color:rgba(0,0,0,0.6);
+    padding-bottom:0;
+}
+.time>button{
+    width:180px;
+    height:40px;
+    background:white;
+    color:#EA4B04;
+    border:2px solid #EA4B04;
+    float:right;
+    font-weight:bold;
+    border-radius: 10px;
+    transition:1s;
+    cursor:pointer;
+}
+.time>button:hover{
+    color:white;
+    background:#EA4B04;
+}
+.darkBackground{
+    width:100%;
+    height:350px;
+    background:#000000;
+    overflow-y: hidden;
+}
+.container{
+    width:90%;
+    height:300px;
+    margin:auto;
+    color:white;
+    display:flex;
+   padding-top:50px;
+}
+.cont{
+    font-size:35px;
+    font-weight: bold;
+    padding:30px 0;
+}
+input{
+    margin:15px 40px;
+    width:300px;
+    height:50px;
+}
+.message{
+    width:350px;
+    height:135px;
+}
+.think{
+    font-size:15px;
+}
+
+.submit{
+   width:120px;
+   height:55px; 
+   margin-left:40px;
+   margin-top:12px;
+   background:#EA4B04;
+   transition:1s;
+   border-style: none;
+   color:white;
+   font-size:15px;
+   font-weight: bold;
+   border-radius: 10px;
+   cursor:pointer;
+}
+.submit:hover{
+    background:#1E1C1B;
+}
+
+.social{
+    display:flex;
+    justify-content: space-around;
+    padding-top:30px;
+    width:100%;
+    height:100px;
+    
+}
+.fa-icn{
+    color:#EA4B04;
+    padding:5px;
+    cursor:pointer;
+}
+.social span{
+    margin:0;
+    cursor:pointer;
+}
+.footer{
+    width:100%;
+    height:100px;
+    background:#1E1C1B;
+    color:rgba(255,255,255,0.5);
+    text-align:center;
+    padding-top:30px;
+}
